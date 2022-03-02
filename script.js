@@ -58,6 +58,12 @@ const loadEvent = () => {
             <h3>${book.sub}</h3>
             <h2>${book.title}</h2>
             <p>${book.text}</p>
+            <div class="read-more">
+                <span>read more</span>
+                <span class="material-icons">
+                    arrow_forward
+                </span>
+            </div>
         </article>
         `)
     })
