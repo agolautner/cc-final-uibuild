@@ -52,18 +52,16 @@ const books = [{
 const loadEvent = () => {
     const rootElement = document.getElementById('root');
     
-    books.map((book) => {
+    books.map((book, idx) => {
         rootElement.insertAdjacentHTML('beforeend', `
         <article class="book-review">
+            <div class="index">${idx + 1}</div>
             <h3>${book.sub}</h3>
             <h2>${book.title}</h2>
             <p>${book.text}</p>
-            <div class="read-more">
-                <span>read more</span>
-                <span class="material-icons">
-                    arrow_forward
-                </span>
-            </div>
+            <button>read more <span class="material-icons">
+            arrow_forward
+            </span></button>
         </article>
         `)
     })
