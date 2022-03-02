@@ -34,6 +34,7 @@ header {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  font-weight: 400;
 
   z-index: 100;
 }
@@ -59,6 +60,7 @@ body {
 
 .book-review {
   position: relative;
+  box-sizing: border-box;
   max-width: 360px;
   border: 1px solid #1a24fb;
   padding: 40px;
