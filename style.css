@@ -11,6 +11,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  gap: 0px 20px;
 }
 
 header {
@@ -78,9 +80,22 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.read-more .material-icons {
   background-color: #f8f7f3;
   color: #1a24fb;
+}
+
+.read-more * {
+  background-color: #f8f7f3;
+  color: #1a24fb;
+}
+
+.read-more:hover {
+  background-color: #1a24fb;
+  color: #f8f7f3;
+}
+
+.read-more:hover * {
+  background-color: #1a24fb;
+  color: #f8f7f3;
 }
